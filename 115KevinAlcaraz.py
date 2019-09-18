@@ -6,14 +6,15 @@ drawer.pensize(40)
 drawer.circle(20)
 sticks = 6
 length = 70
-z = 380 / sticks
+legangle = 380 / sticks
 drawer.pensize(5)
-n = 0
-while (n < sticks):
+counter = 0
+while (counter < sticks):
   drawer.goto(0,0)
-  drawer.setheading(z*n)
+  drawer.setheading(legangle*counter)
   drawer.forward(length)
-  n = n + 1
-drawer.hideturtle()'''
+  counter = counter + 1
+
+drawer.hideturtle()
 wn = trtl.Screen()
 wn.mainloop()
